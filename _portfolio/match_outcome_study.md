@@ -5,6 +5,6 @@ collection: portfolio
 ---
 
 <div>
-  <iframe src="/files/match_outcome_study.html" width="100%" height="600px" frameborder="0">
+  <iframe src="/files/match_outcome_study.pdf" width="100%" height="600px" frameborder="0">
   </iframe>
 </div>
