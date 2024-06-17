@@ -18,4 +18,5 @@ Another position of interest is left full-back. Oleksandr Zinchenko was a revela
 
 Takehiro Tomiyasu and Jakub Kiwior shared left-back duties with Zinchenko this season, making this position one of the most unsettled throughout the campaign. The pie chart below illustrates this instability, showing that no player at left-back accumulated more than 50% of the available minutes.
 
-![left-back-minutes](C:\Users\Owner\dev\lsp2610.github.io\images\left-back-mins.png)
+<img src='/images/match_outcome_study.png'>
+
