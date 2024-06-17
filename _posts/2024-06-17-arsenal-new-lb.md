@@ -8,6 +8,8 @@ tags:
   - arsenal
 ---
 
+<img src='/images/zinny.png'>
+
 ### Introduction
 
 Arsenal enter the summer of 2024 following a highly successful campaign. Despite not securing any silverware, they have established themselves as an elite European team. They narrowly missed out on the Premier League title by a single point to the dominant Manchester City, and even surpassed them in many underlying metrics.
