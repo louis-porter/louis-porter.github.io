@@ -6,7 +6,7 @@ body {
     color: #333; */
     background: black;
     color: #E0E0E0;
-
+    width: 90%;
     max-width: 1200px;
 }
 
@@ -28,7 +28,7 @@ p{
 /* NAVIGATION BAR */
 
 nav {
-    padding: 0;
+    padding-top: 10px;
     margin: 10px 0 60px 0;
 }
 
@@ -38,6 +38,7 @@ nav {
     padding: 0;
     margin: 0;
     gap: 5%;
+    list-style-type: none;
 }
 
 .nav-bar a {
@@ -68,7 +69,7 @@ header {
 }
 
 .header-container{
-    width: 90%;
+    
     margin: 0 auto;
 
 }
@@ -136,8 +137,13 @@ header {
 
 .featured-project-container{
     margin: 60px auto 0 auto;
-    width: 90%;
+    
 }
+
+.featured-project-container h2{
+    margin-bottom: 25px;
+}
+
 
 .featured-project-wrapper{
     padding: 5px;
@@ -145,27 +151,48 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px
+    gap: 15px;
 }
 
 .featured-project{
+    padding-bottom: 15px;
     width: 90%;
     border-radius: 5px;
     border: 2px solid transparent;
     background: linear-gradient(black, black) padding-box, 
     linear-gradient(45deg, #ffbd00, #ff5400, #ff0054, #9e0059, #390099) border-box;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.featured-project:hover{
+.featured-project:hover {
     cursor: pointer;
+    animation: shadow-pulse 1s infinite; /* Apply pulse animation on hover *//
 }
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 24px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.featured-project p{
+    padding-left: 10px;
+}
+
+
 
 .featured-project h4{
     padding-left: 10px
 }
 
 .projects-link-container{
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .projects-link{
@@ -180,13 +207,18 @@ header {
 /* LATEST POSTS */
 
 .latest-posts-container {
-    margin: 60px auto 0 auto;
-    width: 90%;
+    margin: 70px auto 0 auto;
+    
 }
 
 .post-link{
     color: whitesmoke;
     font-weight: bold;
+}
+
+.latest-posts{
+    list-style-type: none;
+    padding-top: 1px;
 }
 
 .latest-post a:hover{
@@ -213,7 +245,6 @@ header {
 /* FOOTER */
 
 footer{
-    padding-left: 20px;
     margin-top: 100px;
 }
 
@@ -224,7 +255,6 @@ ABOUT PAGE */
 
 
 .about-container{
-    width:90%;
     margin: 0 auto;
 }
 
@@ -258,6 +288,47 @@ ABOUT PAGE */
 }
 
 
+/* POSTS */
+
+.post-date{
+    font-size: 13px;
+    font-weight: normal;
+    color: #e0e0e0d5;
+}
+
+.latest-post-bullet{
+    line-height:1px;
+}
+
+.blog-posts{
+    list-style-type: none;
+    line-height: 40px; 
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-posts{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.portfolio-item{
+    margin-bottom: 35px;
+}
+
+.portfolio-item p{
+    padding-left: 30px;
+}
+
+.portfolio-item img {
+    width: 90%;
+    border: 2px solid grey;
+    border-radius: 4px;
+
+}
 
 
 
@@ -270,6 +341,7 @@ ABOUT PAGE */
     body {
         max-width: 713px;
         margin: 0 auto;
+        width: 100%;
     }
 
     .nav-bar {
@@ -308,13 +380,12 @@ ABOUT PAGE */
     .featured-project-wrapper{
         padding: 5px;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+        gap: 15px;
         flex-direction: row;
     }
 
     .featured-project{
-        width: 30%;
-        height: 45%;
 
     }
 

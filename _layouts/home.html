@@ -6,7 +6,7 @@ layout: default
 <header>
     <div class="header-container">
         <h1 class="header-title">Louis Porter</h1>
-        <h2 class="header-job">Data Analyst at Greencastle Solutions</h2>
+        <h2 class="header-job">Data Analyst at Kambi</h2>
         <p class="header-desc">Data Professional with a keen interest in the application of analytics and decision theory in sport.</p>
     </div>
     <div>
@@ -14,10 +14,10 @@ layout: default
             <img class="profile-img" src="../images/headshot_grey.jpeg" alt="smiling picture of me">
         </div>
         <div class="social-buttons-container">
-            <a href="#" class="social-button github" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/lsp2610" class="social-button github" target="_blank" aria-label="GitHub">
                 <img src="../images/github.png" alt="GitHub Logo">
             </a>
-            <a href="#" class="social-button linkedin" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/louis-porter-0b9154186/" class="social-button linkedin" target="_blank" aria-label="LinkedIn">
                 <img src="../images/linkedin.jpeg" alt="LinkedIn Logo">
             </a>
         </div>
@@ -28,36 +28,36 @@ layout: default
     <div class="featured-project-container">
         <h2>Featured Projects</h2>
         <div class="featured-project-wrapper">
-            <div class="featured-project">
-                <h4>Project #1</h4>
-            </div>
-            <div class="featured-project">
-                <h4>Project #2</h4>
-            </div>
-            <div class="featured-project">
-                <h4>Project #3</h4>
-            </div>
+            {% assign featured_projects = site.portfolio | where: 'featured', true %}
+
+            {% for node in featured_projects %}
+                <div class="featured-project" >
+                    <h4>{{ node.title }}</h4>
+                    <p>{{ node.description }}</p>
+                </div>
+            {% endfor %}
+
         </div>
         <div class="projects-link-container">
-            <a class="projects-link" href="#">View all projects →</a>
+            <a class="projects-link" href="/portfolio.html">View all projects →</a>
         </div>
     </div>
 
     <div class="latest-posts-container">
         <h2>Latest Posts</h2>
         <div class="latest-posts-wrapper">
-            <div class="latest-post">
+            <div>
                 <ul class="latest-posts">
                     {% for post in site.posts limit:5 %}
-                        <li>
-                            <h3><a href="{{ post.url }}">{{ post.title}}</a> |
-                                <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span></h3>
+                        <li class="latest-post-bullet">
+                            <h3><a href="{{ post.url }}">{{ post.title}}</a> - <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></h3>
                             <p>{{ post.description }}</p>
+                            <br>
                         </li>
                     {% endfor %}
                 </ul>
                 <div class="posts-link-container">
-                    <a class="posts-link" href="#">View all posts →</a>
+                    <a class="posts-link" href="/blog.html">View all posts →</a>
                 </div>                   
             </div>
             

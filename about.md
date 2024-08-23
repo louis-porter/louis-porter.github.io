@@ -1,6 +1,7 @@
 ---
-title: Hi, I'm Louis Porter
+title: About
 layout: about
+nav-order: 2
 ---
 
 I am 24 years old and based in Essex, UK. I work as a data analyst for a sports betting platform provider called Kambi and work in their London office.

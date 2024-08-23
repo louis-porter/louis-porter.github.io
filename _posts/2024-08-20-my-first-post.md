@@ -1,6 +1,6 @@
 ---
 title: My First Post
-layout: default
+layout: blog-post
 description: First post desc
 ---
 

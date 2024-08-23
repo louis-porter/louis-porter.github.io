@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h1>Blog</h1>
+
+<h3>This is where I write posts about topics that interest me.</h3>
+<br>
+
+
+
+<ul class="blog-posts">
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a> - <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+    {% else %}
+        <li>No posts found.</li>
+    {% endfor %}
+</ul>

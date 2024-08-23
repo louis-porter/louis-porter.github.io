@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+
+<h1>Portfolio</h1>
+
+<h3>This is a collection of the projects that I am most proud of.</h3>
+<br>
+
+<ul class="portfolio-posts">
+    {% for project in site.portfolio %}
+        <li class="portfolio-item">
+            <a href="{{ project.url }}">{{ project.title }}</a> - <span class="post-date">{{ project.date | date: "%b %-d, %Y" }}</span>
+            <p>{{ project.description }}</p>
+            <img src="{{project.image}}">
+        </li>
+    {% else %}
+        <li>No projects found.</li>
+    {% endfor %}
+</ul>
+
+{{ content }}
