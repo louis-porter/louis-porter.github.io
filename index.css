@@ -1,16 +1,24 @@
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     background: lightgray;
     color: black;
     max-width: 1200px;
+    height: 100%;
 }
 
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .nav-bar {
     padding: 15px 10px;
     background: white;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     
 }
 
@@ -19,4 +27,26 @@ body {
     color: black;
     font-weight: bold;
     font-size: 20px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+footer{
+    padding: 5px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.about-container{
+    margin: 5px;
+    background: white;
+    border-radius: 5px;
 }
