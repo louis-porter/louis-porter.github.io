@@ -43,7 +43,7 @@ footer{
 }
 
 
-
+/* ABOUT SECTION */
 
 .about-container{
     padding: 10px;
@@ -52,7 +52,70 @@ footer{
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about-container h1{
+
+.about-container button{
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.about-container button:hover,
+.about-container button:active {
+    background: rgb(109, 109, 109)
+}
+
+
+/* CONTACT SECTION */
+
+
+.contact-container {
+    margin: 20px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h1{
+    text-align: left;
+}
+
+.contact-container a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-container a img {
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+.contact-container a:hover,
+.contact-container a:active {
+    background: rgb(109, 109, 109);
+}
+
+/* Typography */
+h1{
     font-size: 20px;
     margin: 0;
 }
