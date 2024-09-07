@@ -38,15 +38,19 @@
                     </a>
                 </div>
                 <div class="gallery">
-                    {% for post in site.posts %}
-                    <div class="tile">
-                      <img src="{{ post.image }}" alt="{{ post.title }}">
-                      <div class="overlay">
-                        <div class="text">{{ post.title }}</div>
-                      </div>
+                    <h1 class="gallery-title">Projects</h1>
+                    <div class="gallery-grid">
+                        {% for post in site.posts %}
+                        <div class="tile">
+                            <img src="{{ post.image }}" alt="{{ post.title }}">
+                            <div class="text-container">
+                                <div class="post-title">{{ post.title }}</div>
+                                <div class="post-desc">{{ post.desc }}</div>
+                            </div>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                  </div>
+                </div>
         </main>
         
         <footer>
