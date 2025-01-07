@@ -28,6 +28,21 @@ layout: index
         </div>
     </div>
     <div class="gallery">
+        <h1 class="gallery-title">Portfolio 💼</h1>
+        <div class="gallery-grid">
+            {% for post in site.pages %}
+            <div class="tile">
+                <a href="{{ pages.url }}">
+                    <img src="{{ pages.image }}" alt="{{ pages.title }}">
+                    <div class="text-container">
+                        <div class="pages-title">{{ post.title }}</div>
+                        <div class="pages-desc">{{ post.desc }}</div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    <div class="gallery">
         <h1 class="gallery-title">Projects 🚧</h1>
         <div class="gallery-grid">
             {% for post in site.posts %}
