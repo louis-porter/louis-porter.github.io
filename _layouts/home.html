@@ -30,7 +30,7 @@ layout: index
     <div class="gallery">
         <h1 class="gallery-title">Portfolio 💼</h1>
         <div class="gallery-grid">
-            {% for post in site.portfolio %}
+            {% for portfolio in site.portfolio %}
             <div class="tile">
                 <a href="{{ portfolio.url }}">
                     <img src="{{ portfolio.image }}" alt="{{ portfolio.title }}">
