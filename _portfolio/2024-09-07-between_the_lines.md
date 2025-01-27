@@ -1,11 +1,11 @@
 ---
 title: "Between the Lines - A Football Analytics Blog"
-image: "images/btl.png"
+image: "images/betweenthelines.png"
 date: 2024-09-08
 layout: post
 desc: "A football analytics blog/newsletter where I share data analysis and modelling relating to football with a focus on the Premier League."
 ---
-![blog](/images/btl.png)
+![blog](/images/betweenthelines.png)
 
 # Between The Lines
 
